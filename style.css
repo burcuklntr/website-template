@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contanier {
+  background: url(arka.jpg);
+  height: 100vh;
+  background-size: 100% 100%; /* fotoğrafın tam boyut görünmesi icin */
+}
+
+.contanier .navbar {
+  width: 100%;
+  height: 80px;
+  background: rgba(5, 65, 25, 0.4); /* navbar'ın rengi */
+}
+
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px; /* yukarıda olan yazıyı biraz aşağı indiriyor */ /* navbardaki logonun yerini belirledi*/
+}
+.navbar .logo a {
+  text-decoration: none; /* altı çizili olarak geldiği için bunu none yapıp kaldırıyoruz */
+  font-size: 30px;
+  font-family: elegant;
+  color: white; /* navbardaki LOGO yazan yer */
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px; /* navbardaki UL(Hakkımızda...vs) sağa kaydırdı */
+  font-family: elegant;
+}
+
+.navbar ul li {
+  list-style: none; /* liste yaparken noktalı olması olayını kaldırıyor */
+  display: inline-block; /* navbardaki alt alta yazı olayını kaldırıp yan yana getiriyor */
+  margin: 0 9px; /* yan yana olan yazıların aralarını açıyor */
+  line-height: 80px; /* yukarıda olan yazıyı biraz aşağı indiriyor */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: elegant;
+  transition: 0.5s;
+  /* Hakkımızda Ürünler..vs yazan yerin rengi boyutu */
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  /*fare imleci geldiğinde stil değişiklikleri*/
+  background: rgb(194, 95, 9);
+  border-radius: 2px; /* yazıların üstünden geçerken arka planının renkli olması */
+  /* opacity: 0.5; şeffaflık */
+}
+.contanier .center {
+  position: absolute;
+  top: 50%; /* yukarıdan aşağıya getirdi yazıyı */
+  left: 50%; /* soldan sağa doğru getirip ortaya kadar getirdi yazıyı */
+  transform: translate(-50%, -50%);
+  font-family: elegant;
+  user-select: none; /* yazıyı kopyalamayı engeller */
+}
+.center h1 {
+  color: rgb(71, 75, 128);
+  font-size: 70px; /* orta başlığın boyutunu belirler */
+  font-family: elegant;
+  width: 900px;
+  text-align: center; /* orta başlık yazısını ortalamak icin  */
+}
+.center h2 {
+  color: rgb(71, 75, 128);
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  margin-top: 10px;
+  text-align: center;
+}
+.center .buttons {
+  margin: 35px 280px;
+}
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 13px;
+  font-weight: bold;
+  color: cadetblue;
+  background: rgb(217, 240, 195);
+  border: solid 1px white;
+  cursor: pointer;
+  outline: none;
+  border-radius: 25px;
+  transition: 0.5s; /* butonlar arası yavaş geçiş efekti*/
+}
